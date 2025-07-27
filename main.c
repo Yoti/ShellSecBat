@@ -582,6 +582,84 @@ int module_start(SceSize argc, const void *args)
         get_functions_testkit_369();
         break;
 
+    case 0x2053B5A5: // retail 3.70 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_370();
+        break;
+
+    case 0xBECA8EB4: // PDEL 3.70 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_devkit_370();
+        break;
+
+    case 0x677ADA9A: // PTEL 3.70 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_testkit_370();
+        break;
+
+    case 0xF476E785: // retail 3.71 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_371();
+        break;
+
+    case 0xC5B7C871: // PDEL 3.71 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_devkit_371();
+        break;
+
+    case 0x80864339: // PTEL 3.71 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_testkit_371();
+        break;
+
+    case 0x939FFBE9: // retail 3.72 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_372();
+        break;
+
+    case 0xB45216F4: // PDEL 3.72 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_devkit_372();
+        break;
+
+    case 0xA6509361: // PTEL 3.72 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_testkit_372();
+        break;
+
+    case 0x734D476A: // retail 3.73 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_373();
+        break;
+
+    case 0x4670A0C8: // PDEL 3.73 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_devkit_373();
+        break;
+
+    case 0xD7AE3036: // PTEL 3.73 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_testkit_373();
+        break;
+
+    case 0x51CB6207: // retail 3.74 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_374();
+        break;
+
     default:
         return SCE_KERNEL_START_FAILED;
     }
