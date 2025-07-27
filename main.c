@@ -496,12 +496,10 @@ int module_start(SceSize argc, const void *args)
         get_functions_retail_360();
         break;
 
-    case 0x5549BF1F: // retail 3.65 SceShell
-    case 0x34B4D82E: // retail 3.67 SceShell
-    case 0x12DAC0F3: // retail 3.68 SceShell
-        offsets[0] = 0x183F6C;
-        offsets[1] = 0x40E4FC;
-        get_functions_retail_365_368();
+    case 0x6CB01295: // PDEL 3.60 SceShell
+        offsets[0] = 0x17B8DC;
+        offsets[1] = 0x400028;
+        get_functions_devkit_360();
         break;
 
     case 0xEAB89D5C: // PTEL 3.60 SceShell
@@ -510,22 +508,78 @@ int module_start(SceSize argc, const void *args)
         get_functions_testkit_360();
         break;
 
-    case 0x587F9CED: // PTEL 3.65 SceShell
-        offsets[0] = 0x17C3A0;
-        offsets[1] = 0x404C68;
-        get_functions_testkit_365();
+    case 0x532155E5: // retail 3.61 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_361();
         break;
 
-    case 0x6CB01295: // PDEL 3.60 SceShell
-        offsets[0] = 0x17B8DC;
-        offsets[1] = 0x400028;
-        get_functions_devkit_360();
+    case 0x232D733B: // PDEL 3.61 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_devkit_361();
+        break;
+
+    case 0x7A5F8457: // PTEL 3.61 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_testkit_361();
+        break;
+
+    case 0xBB4B0A3E: // retail 3.63 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_363();
+        break;
+
+    case 0xE541DB9B: // PDEL 3.63 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_devkit_363();
+        break;
+
+    case 0xE7C5011A: // PTEL 3.63 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_testkit_363();
+        break;
+
+    case 0x5549BF1F: // retail 3.65 SceShell
+    case 0x34B4D82E: // retail 3.67 SceShell
+    case 0x12DAC0F3: // retail 3.68 SceShell
+        offsets[0] = 0x183F6C;
+        offsets[1] = 0x40E4FC;
+        get_functions_retail_365_368();
         break;
 
     case 0xE6A02F2B: // PDEL 3.65 SceShell
         offsets[0] = 0x17B9A4;
         offsets[1] = 0x400498;
         get_functions_devkit_365();
+        break;
+
+    case 0x587F9CED: // PTEL 3.65 SceShell
+        offsets[0] = 0x17C3A0;
+        offsets[1] = 0x404C68;
+        get_functions_testkit_365();
+        break;
+
+    case 0x0703C828: // retail 3.69 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_retail_369();
+        break;
+
+    case 0x5314D60B: // PDEL 3.69 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_devkit_369();
+        break;
+
+    case 0x30D112EE: // PTEL 3.69 SceShell
+        offsets[0] = 0x??????;
+        offsets[1] = 0x??????;
+        get_functions_testkit_369();
         break;
 
     default:
